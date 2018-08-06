@@ -1,0 +1,35 @@
+[debug] [2018-08-06T15:46:54.641Z] ----------------------------------------------------------------------
+[debug] [2018-08-06T15:46:54.644Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-06T15:46:54.645Z] CLI Version:   4.0.0
+[debug] [2018-08-06T15:46:54.645Z] Platform:      win32
+[debug] [2018-08-06T15:46:54.645Z] Node Version:  v8.11.1
+[debug] [2018-08-06T15:46:54.645Z] Time:          Mon Aug 06 2018 12:46:54 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-06T15:46:54.645Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-06T15:46:54.666Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-06T15:46:54.666Z] > authorizing via signed-in user
+[debug] [2018-08-06T15:46:54.670Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/conectxbusiness  
+  
+ Mon Aug 06 2018 12:46:54 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-06T15:46:55.472Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-06T15:46:55.474Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/conectxbusiness/tokens  
+  
+ Mon Aug 06 2018 12:46:55 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-08-06T15:46:56.182Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'conectxbusiness'...
+[info] 
+[info] i  deploying database, hosting
+[debug] [2018-08-06T15:46:57.263Z] Error: ENOENT: no such file or directory, open 'C:\Users\Willerson\Documents\experience13\database.rules.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Config.readProjectFile (C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:176:22)
+    at C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\database\prepare.js:52:42
+    at C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:4925:15
+    at baseForOwn (C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:3010:24)
+    at C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:4894:18
+    at Function.forEach (C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\lodash\lodash.js:9342:14)
+    at module.exports (C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\database\prepare.js:49:5)
+    at _chain (C:\Users\Willerson\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:26:38)
+[error] 
+[error] Error: An unexpected error has occurred.

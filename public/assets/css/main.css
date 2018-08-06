@@ -1647,7 +1647,7 @@ header .logo {
 }
 header .logo img {
   float: left;
-  max-width: 160px;
+  max-width: 42px;
   margin-right: 3px;
 }
 header ul.menu li a.nav-link {
@@ -2009,7 +2009,6 @@ Cover
   display: block;
   position: relative;
   list-style: none;
-  word-break: break-all;
 }
 .cover_slider .slider-content-center {
   max-width: 800px;
