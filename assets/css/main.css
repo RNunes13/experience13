@@ -1756,7 +1756,7 @@ header.sticky_header {
 3 Footer
 -------------------------------------------------------- */
 footer {
-  background-color: #0b031b;
+  background-color: #090848;
 }
 footer .footer_box {
   position: relative;
@@ -1833,7 +1833,7 @@ footer .newsletter_form .form-control {
 }
 
 .copyright_footer {
-  background-color: #080113;
+  background-color: #050427;
   padding: 15px;
 }
 .copyright_footer p {
@@ -1925,7 +1925,7 @@ footer .newsletter_form .form-control {
   font-weight: bold;
 }
 
-.btn-primary, .btn-purchase {
+.btn-primary, .btn-purchase, .btn-message {
   background-color: #FFF;
   border: solid 1px #FFF;
   color: #000;
@@ -1933,12 +1933,12 @@ footer .newsletter_form .form-control {
   transition: all 300ms ease-in-out;
 }
 
-.btn-purchase {
+.btn-purchase, .btn-message {
   background-color: #000;
   color: #FFF;
 }
 
-.btn-purchase:hover {
+.btn-purchase:hover, .btn-message:hover {
   background-color: #0C0B64;
   color: #FFF;
 }
@@ -2222,7 +2222,6 @@ Cover
   width: 100%;
   top: 0;
   bottom: 0;
-  background-color: rgba(31, 31, 32, 0.6);
 }
 .inner_cover .inner_cover_content {
   padding: 170px 0;
@@ -3191,4 +3190,8 @@ textarea.form-control {
 }
 .accordion_card .card-body {
   font-size: 16px;
+}
+
+.map iframe {
+  width: 100%;
 }
