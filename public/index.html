@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="description" content="Evento -Event Html Template">
-    <meta name="keywords" content="Evento , Event , Html, Template">
-    <meta name="author" content="ColorLib">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
 
     <title>Event</title>
 
@@ -36,11 +36,11 @@
         <div class="loader-inner"></div>
     </div>
 
-    <!--Início do cabeçalho -->
+    <!-- Início - Cabeçalho -->
     <header class="header navbar fixed-top navbar-expand-md">
         <div class="container">
-            <a class="navbar-brand logo" href="#">
-                <img src="assets/img/logo-edit.png" alt="Evento" />
+            <a class="navbar-brand logo" href="\">
+                <img src="assets/img/logo.png" alt="Evento" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="lnr lnr-text-align-right"></span>
@@ -48,22 +48,22 @@
             <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
                 <ul class=" nav navbar-nav menu">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Início</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Palestrantes</a>
+                        <a class="nav-link " href="#palestrantes">Palestrantes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Ingressos</a>
+                        <a class="nav-link " href="#ingressos">Ingressos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contato</a>
+                        <a class="nav-link " href="contact.html">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--Fim do cabeçalho-->
+    <!--Fim - Cabeçalho-->
 
     <section id="home" class="home-cover">
         <div class="cover_slider owl-carousel owl-theme">
@@ -186,7 +186,7 @@
 
 
     <!--Início - Plaestrantes-->
-    <section class="pb100">
+    <section id="palestrantes" class="pb100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -211,7 +211,7 @@
     <!--Fim - Plaestrantes-->
 
     <!--Início - Ingressos-->
-    <section class="pb100">
+    <section id="ingressos" class="pb100">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
@@ -376,6 +376,22 @@
         </div>
     </div>
     <!--Fim - Rodapé -->
+
+    <!-- snippet FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBWZXkmHsjNcgmeMWnCuMfoUIHZrc8LoKg",
+            authDomain: "conectxbusiness.firebaseapp.com",
+            databaseURL: "https://conectxbusiness.firebaseio.com",
+            projectId: "conectxbusiness",
+            storageBucket: "conectxbusiness.appspot.com",
+            messagingSenderId: "359397330244"
+        };
+        firebase.initializeApp(config);
+    </script>
+
 
     <!-- jquery -->
     <script src="assets/js/jquery.min.js"></script>
