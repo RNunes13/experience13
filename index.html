@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
 
     <!-- Open graph -->
-		<meta property="og:site_name" content="Connectx Business">
-		<meta property="og:image" content="assets/img/bg/background-hover.jpg">
-		<meta property="og:title" content="Connectx Business">
-		<meta property="og:description" content="Connectx Business - Evento focado no crescimento da sua empresa de uma maneira única e exponencial">
-		<meta property="og:url" content="https://www.connectxbusiness.com.br">
+    <meta property="og:site_name" content="Connectx Business">
+    <meta property="og:image" content="assets/img/bg/background-hover.jpg">
+    <meta property="og:title" content="Connectx Business">
+    <meta property="og:description" content="Connectx Business - Evento focado no crescimento da sua empresa de uma maneira única e exponencial">
+    <meta property="og:url" content="https://www.connectxbusiness.com.br">
 
     <!-- S.E.O -->
     <meta name="robots" content="index, follow" />
@@ -61,16 +61,19 @@
             <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
                 <ul class=" nav navbar-nav menu">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#home" data-toggle="collapse" data-target="#headernav">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#palestrantes">Palestrantes</a>
+                        <a class="nav-link active" href="#aboutEvent" data-toggle="collapse" data-target="#headernav">Sobre o evento</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#ingressos">Ingressos</a>
+                        <a class="nav-link " href="#palestrantes" data-toggle="collapse" data-target="#headernav">Palestrantes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contact.html">Contato</a>
+                        <a class="nav-link " href="#ingressos" data-toggle="collapse" data-target="#headernav">Ingressos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#patrocinadores" data-toggle="collapse" data-target="#headernav">Patrocinadores</a>
                     </li>
                 </ul>
             </div>
@@ -108,8 +111,8 @@
     <!--Início - Informações Evento-->
     <section class="pt50 pb50">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-6 col-lg-3 d-flex justify-content-center">
+            <div class="row info-event">
+                <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
                     <div class="icon_box_two">
                         <i class="ion-ios-calendar-outline"></i>
                         <div class="content">
@@ -123,7 +126,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
                     <div class="icon_box_two">
                         <i class="ion-ios-location-outline"></i>
                         <div class="content">
@@ -137,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
                     <div class="icon_box_two">
                         <i class="ion-ios-person-outline"></i>
                         <div class="content">
@@ -151,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
                     <div class="icon_box_two">
                         <i class="ion-ios-pricetag-outline"></i>
                         <div class="content">
@@ -169,82 +172,112 @@
     </section>
     <!--Fim - Informações Evento-->
 
-    <!--Início - Sobre o Evento-->
-    <section class="pt20 pb100">
+    <!-- Início - Contagem Regressiva -->
+    <section class="bg-img pt70 pb70" style="background-image: url('assets/img/bg/countdown.png');">
+        <div class="overlay_dark"></div>
         <div class="container">
-            <div class="section_title">
-                <h3 class="title">
-                  A transformação do seu negócio começa aqui
-                </h3>
-            </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-md-6">
-                    <p>
-                      O <strong>PME Business Night</strong> é um evento focado no crescimento da <strong>sua empresa</strong> de uma maneira única e 
-                      exponencial. E, ao contrário de muitos eventos que adoram oferecer soluções totalmente fora da 
-                      realidade para maioria das pequenas empresas, nós focamos naquilo que nos une: <strong>nosso tamanho!</strong>
-                    </p>
-                </div>
-                <div class="col-12 col-md-6">
-                  <a href="https://www.sympla.com.br/pme-business-night__335506" class="btn btn-purchase btn-rounded btn-subscribe">
-                    Quero transformar meu negócio
-                </a>
+                <div class="col-12 col-md-10">
+                    <h4 class="mb30 text-center color-light">Contagem Regressiva até o grande evento</h4>
+                    <div class="countdown"></div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="pt20 pb100">
-      <div class="container">
-          <div class="section_title">
-              <h3 class="title">
-                O que vou encontrar no PME Business Night?
-              </h3>
-          </div>
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-4">
-                  <p>
-                    <strong>Evolução profissional</strong>: Conheça técnicas e aprenda conceitos ideias para gerenciar 
-                    sua PME com especialistas do mercado.
-                  </p>
-              </div>
-              <div class="col-12 col-md-4">
-                  <p>
-                    <strong>Networking</strong>: Faça contatos e troque informações com profissionais que vivem o mesmo momento que o seu.
-                  </p>
-              </div>
-              <div class="col-12 col-md-4">
-                <p>
-                  <strong>Foco no seu tempo</strong>: Diferente de outros eventos que duram o dia inteiro, nós entendemos que cada 
-                  segundo do pequeno empreendedor vale ouro e decidimos ter um estilo mais compacto e ágil, focado 
-                  diretamente naquilo dá resultado.
+    <!-- Fim - Contagem Regressiva -->
 
-                </p>
+    <!--Início - Sobre o Evento-->
+    <section id="aboutEvent" class="pt50 pb10">
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title">
+                    A transformação do seu negócio começa aqui
+                </h3>
             </div>
-          </div>
-      </div>
-  </section>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-6">
+                    <p>
+                        O
+                        <strong>PME Business Night</strong> é um evento focado no crescimento da
+                        <strong>sua empresa</strong> de uma maneira única e exponencial. E, ao contrário de muitos eventos que adoram
+                        oferecer soluções totalmente fora da realidade para maioria das pequenas empresas, nós focamos naquilo
+                        que nos une:
+                        <strong>nosso tamanho!</strong>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center transform-business">
+                    <a href="https://www.sympla.com.br/pme-business-night__335506" class="btn btn-purchase btn-rounded btn-subscribe">
+                        Transformar meu negócio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt80 pb50">
+        <div class="container">
+            <div class="section_title">
+                <h3 class="title">
+                    O que vou encontrar no PME Business Night?
+                </h3>
+            </div>
+            <div class="row justify-content-center mt30">
+                <div class="col-12 col-md-6 col-lg-4 mb30">
+                    <div class="icon_box_one">
+                        <i class="lnr lnr-rocket"></i>
+                        <div class="content">
+                            <h4>Evolução profissional</h4>
+                            <p class="text-justify">
+                                Conheça técnicas e aprenda conceitos ideias para gerenciar sua PME com especialistas do mercado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb30">
+                    <div class="icon_box_one">
+                        <i class="lnr lnr-users"></i>
+                        <div class="content">
+                            <h4>Networking</h4>
+                            <p class="text-justify">
+                                Faça contatos e troque informações com profissionais que vivem o mesmo momento que o seu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb30">
+                    <div class="icon_box_one">
+                        <i class="lnr lnr-clock"></i>
+                        <div class="content">
+                            <h4>Foco no seu tempo</h4>
+                            <p class="text-justify">
+                                Diferente de outros eventos que duram o dia inteiro, nós entendemos que cada segundo do pequeno empreendedor vale ouro e
+                                decidimos ter um estilo mais compacto e ágil, focado diretamente naquilo dá resultado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Fim - Sobre o Evento-->
 
-
     <!--Início - Plaestrantes-->
-    <section id="palestrantes" class="pb100">
+    <section id="palestrantes" class="pb50">
         <div class="container">
-            <div class="section_title mb50">
+            <div class="section_title mb10">
                 <h3 class="title">
-                    Nossos Palestrantes
+                    Palestrantes
                 </h3>
             </div>
         </div>
         <div class="row justify-content-center no-gutters">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-sm-6 col-md-4 col-xl-3">
                 <div class="speaker_box">
                     <div class="speaker_img">
                         <img src="assets/img/speakers/ricardo_teixeira.jpg" alt="Ricardo Teixeira">
                         <div class="info_box">
                             <h5 class="name">Ricardo Teixeira</h5>
-                            <p class="">Especialista no segmento de Gestão Empresarial e 
-                              professor da FGV no MBA em Contabilidade</p>
+                            <p class="text-justify">Especialista no segmento de Gestão Empresarial e professor da FGV no MBA em Contabilidade</p>
                         </div>
                     </div>
                 </div>
@@ -254,9 +287,9 @@
     <!--Fim - Plaestrantes-->
 
     <!--Início - Ingressos-->
-    <section id="ingressos" class="pb100">
+    <section id="ingressos" class="pb50">
         <div class="container">
-            <div class="section_title mb50">
+            <div class="section_title mb10">
                 <h3 class="title">
                     Ingressos
                 </h3>
@@ -272,9 +305,9 @@
                             <h4>
                                 Empresarial
                             </h4>
-                            <h6>
+                            <!-- <h6>
                                 subtitulo (se houver)
-                            </h6>
+                            </h6> -->
                         </div>
                         <div class="price_tag">
                             20
@@ -299,9 +332,9 @@
                             <h4>
                                 Estudantil
                             </h4>
-                            <h6>
+                            <!-- <h6>
                                 subtitulo (se houver)
-                            </h6>
+                            </h6> -->
                         </div>
                         <div class="price_tag">
                             10
@@ -323,18 +356,19 @@
     <!--Fim - Ingressos-->
 
     <!--Início - Patrocinadores -->
-    <section class="bg-gray pt100 pb100">
+    <section id="patrocinadores" class="bg-gray pt50 pb50">
         <div class="container">
             <div class="section_title mb50">
                 <h3 class="title">
                     Nossos Patrocinadores
                 </h3>
             </div>
-            <div class="brand_carousel owl-carousel">
-                <div class="brand_item text-center">
-                    <img src="assets/img/sponsors/s1.png" alt="brand">
-                </div>
+            <div class="brand_item text-center">
+                <img src="assets/img/sponsors/s1.png" alt="brand">
             </div>
+            <!-- <div class="brand_carousel owl-carousel">
+                Para exibir os patrocinadores com o efeito carousel, descomentar este trecho, e inserir os elementos
+            </div> -->
         </div>
     </section>
     <!--Início - Patrocinadores -->
@@ -342,14 +376,14 @@
     <!--Início - Adquira seu ingresso -->
     <section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/background-hover.jpg');">
         <div class="container">
-            <div class="section_title">
+            <div class="section_title text-center">
                 <h3 class="title color-light">
                     Adquira seu ingresso
                 </h3>
             </div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-12 text-center">
-                    <a href="https://www.sympla.com.br/pme-business-night__335506" class="btn btn-primary btn-rounded font-weight-bold">Quero transformar meu negócio</a>
+                    <a href="https://www.sympla.com.br/pme-business-night__335506" class="btn btn-primary btn-rounded font-weight-bold">Transformar meu negócio</a>
                 </div>
             </div>
         </div>
@@ -366,15 +400,15 @@
                         <div class="footer_box_body">
                             <ul class="footer_social">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/ConnectXBN/" target="_blank">
                                         <i class="ion-social-facebook"></i>
                                     </a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#">
                                         <i class="ion-social-linkedin"></i>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -385,7 +419,7 @@
     <div class="copyright_footer">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-12">
+                <div class="col-12 col-md-6 text-center">
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
@@ -395,10 +429,13 @@
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-6 text-center">
                     <ul class="footer_menu">
                         <li>
-                            <a href="#home">Início</a>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#aboutEvent">Sobre o evento</a>
                         </li>
                         <li>
                             <a href="#palestrantes">Palestrantes</a>
@@ -407,7 +444,7 @@
                             <a href="#ingressos">Ingressos</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contato</a>
+                            <a href="#patrocinadores">Patrocinadores</a>
                         </li>
                     </ul>
                 </div>
@@ -430,7 +467,6 @@
         };
         firebase.initializeApp(config);
     </script>
-
 
     <!-- jquery -->
     <script src="assets/js/jquery.min.js"></script>

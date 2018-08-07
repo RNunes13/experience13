@@ -137,7 +137,7 @@ ul.nosyely_list {
   display: inline-block;
   padding: 25px;
   min-width: 120px;
-  background-color: #F44336;
+  background-color: #1b19b9;
   color: #ffffff;
   font-size: 48px;
   font-weight: 600;
@@ -151,7 +151,6 @@ ul.nosyely_list {
 }
 
 .bg-img {
-  border-radius: 4px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -162,7 +161,7 @@ ul.nosyely_list {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(12, 11, 100, 0.75);
 }
 
 .brand_item {
@@ -269,7 +268,18 @@ img {
   max-width: 100%;
 }
 
+@media (max-width: 992px) {
+  .transform-business {
+    margin-top: 30px;
+  }
+}
+
 @media (max-width: 768px) {
+  .section_title .title {
+    font-size: 28px;
+  }
+
+
   h1, .h1 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -1806,8 +1816,7 @@ footer .footer_social li a {
   text-align: center;
 }
 footer .footer_social li a:hover {
-  background-color: #0C0B64;
-  color: #ffffff;
+  background-color: #1a17b7;
 }
 
 footer .footer_social i[class^='ion-social-'] {
@@ -1846,7 +1855,6 @@ footer .newsletter_form .form-control {
   padding: 0;
   margin: 0;
   list-style: none;
-  direction: rtl;
 }
 .copyright_footer ul.footer_menu li {
   display: inline-block;
@@ -2031,6 +2039,7 @@ Cover
 }
 .cover_slider .cover_item .slider_content {
   display: table;
+  padding: 15px 0;
   background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
   width: 100%;
@@ -2044,7 +2053,6 @@ Cover
   vertical-align: middle;
 }
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-title {
-  margin-top: 25px;
   margin-bottom: 0;
   opacity: 0;
   font-weight: 500;
@@ -2329,7 +2337,7 @@ Cover
 .icon_box_one {
   background-color: #f0f2f6;
   padding: 0;
-  margin: 25px 0;
+  height: 100%;
   position: relative;
   overflow: hidden;
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.08);
@@ -2429,6 +2437,12 @@ Cover
 .icon_box_two .content p {
   font-weight: 500;
   color: #838383;
+}
+
+@media (max-width: 576px) {
+  .info-event > div {
+    justify-content: flex-start!important;
+  }
 }
 
 /*  ----------------------------------------------------
