@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
 
     $(".countdown")
-        .countdown("2018/03/01", function (event) {
+        .countdown("2018/08/09 19:00:00", function (event) {
             $(this).html(
                 event.strftime('<div>%w <span>Weeks</span></div>  <div>%D <span>Days</span></div>  <div>%H<span>Hours</span></div> <div>%M<span>Minutes</span></div> <div>%S<span>Seconds</span></div>')
             );
@@ -69,8 +69,8 @@ $(document).ready(function () {
      SLIDER
      =============================================== */
     $(".cover_slider").owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         smartSpeed: 1000,
         autoplayHoverPause: false,
         dots: true,
@@ -161,8 +161,7 @@ MAPS
 
 });
 
-//Custom code
-$('#headernav').click(e => {
+function anchorClick(e) {
     e.preventDefault();
 
     let target = $(e.target).attr('href');
@@ -172,10 +171,14 @@ $('#headernav').click(e => {
     } else if (target.substring(1) !== '') {
     
         $('html, body').animate({
-            scrollTop: $(target).offset().top - 100
+            scrollTop: $(target).offset().top - 110
         }, 500);
 
     } else {
         window.location.href = target;
     }
-})
+}
+
+//Custom code
+$('#headernav').click(e => anchorClick(e));
+$('.footer_menu').click(e => anchorClick(e));
