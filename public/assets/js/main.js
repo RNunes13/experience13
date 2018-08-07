@@ -69,8 +69,8 @@ $(document).ready(function () {
      SLIDER
      =============================================== */
     $(".cover_slider").owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         smartSpeed: 1000,
         autoplayHoverPause: false,
         dots: true,
@@ -161,8 +161,7 @@ MAPS
 
 });
 
-//Custom code
-$('#headernav').click(e => {
+function anchorClick(e) {
     e.preventDefault();
 
     let target = $(e.target).attr('href');
@@ -172,10 +171,14 @@ $('#headernav').click(e => {
     } else if (target.substring(1) !== '') {
     
         $('html, body').animate({
-            scrollTop: $(target).offset().top - 100
+            scrollTop: $(target).offset().top - 110
         }, 500);
 
     } else {
         window.location.href = target;
     }
-})
+}
+
+//Custom code
+$('#headernav').click(e => anchorClick(e));
+$('.footer_menu').click(e => anchorClick(e));
